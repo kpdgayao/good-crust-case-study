@@ -1,0 +1,4244 @@
+[
+  {
+    "order_id": "GC-1000",
+    "order_date": "2025-02-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1001",
+    "order_date": "2025-01-29",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1001",
+    "order_date": "2025-01-29",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1002",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1002",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1003",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1003",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1004",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1004",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1004",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1004",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1005",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1005",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1005",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1005",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1006",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1006",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1006",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1006",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1007",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1007",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1007",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1008",
+    "order_date": "2025-02-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1008",
+    "order_date": "2025-02-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1009",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1009",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1009",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1009",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1010",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1010",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1011",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1011",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1012",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1012",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1012",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1012",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1013",
+    "order_date": "2025-01-25",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1013",
+    "order_date": "2025-01-25",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1014",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1014",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1014",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1014",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1015",
+    "order_date": "2025-01-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1015",
+    "order_date": "2025-01-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1016",
+    "order_date": "2025-01-11",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1017",
+    "order_date": "2025-01-06",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1017",
+    "order_date": "2025-01-06",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1018",
+    "order_date": "2025-01-07",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1019",
+    "order_date": "2025-02-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-PEPPERON",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1020",
+    "order_date": "2025-02-06",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1020",
+    "order_date": "2025-02-06",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1020",
+    "order_date": "2025-02-06",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1020",
+    "order_date": "2025-02-06",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1021",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1021",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1022",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1022",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1023",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1023",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1023",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1024",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1024",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1025",
+    "order_date": "2025-02-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1025",
+    "order_date": "2025-02-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1025",
+    "order_date": "2025-02-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1026",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1027",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1027",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1027",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1027",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1028",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1028",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1028",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1029",
+    "order_date": "2025-02-07",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1029",
+    "order_date": "2025-02-07",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1029",
+    "order_date": "2025-02-07",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1029",
+    "order_date": "2025-02-07",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1030",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1030",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1030",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1031",
+    "order_date": "2025-01-24",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1032",
+    "order_date": "2025-02-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1032",
+    "order_date": "2025-02-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1032",
+    "order_date": "2025-02-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1033",
+    "order_date": "2025-02-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1033",
+    "order_date": "2025-02-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1034",
+    "order_date": "2025-02-13",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1035",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1035",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1035",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1036",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1036",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1036",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1037",
+    "order_date": "2025-02-11",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1037",
+    "order_date": "2025-02-11",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1038",
+    "order_date": "2025-01-26",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1039",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1039",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1040",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1040",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1040",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1041",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1041",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1041",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1041",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1042",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1042",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1042",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1043",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1044",
+    "order_date": "2025-01-05",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1044",
+    "order_date": "2025-01-05",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1044",
+    "order_date": "2025-01-05",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1045",
+    "order_date": "2025-01-10",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1046",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1046",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1046",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1046",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1047",
+    "order_date": "2025-01-31",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1048",
+    "order_date": "2025-01-29",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1048",
+    "order_date": "2025-01-29",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1048",
+    "order_date": "2025-01-29",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1049",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1049",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1050",
+    "order_date": "2025-01-28",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1050",
+    "order_date": "2025-01-28",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1050",
+    "order_date": "2025-01-28",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1050",
+    "order_date": "2025-01-28",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1051",
+    "order_date": "2025-01-12",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1051",
+    "order_date": "2025-01-12",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1052",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1052",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1053",
+    "order_date": "2025-02-19",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1053",
+    "order_date": "2025-02-19",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1054",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1054",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1054",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1054",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1055",
+    "order_date": "2025-01-24",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1056",
+    "order_date": "2025-01-28",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1056",
+    "order_date": "2025-01-28",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1057",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1057",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1057",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1057",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1058",
+    "order_date": "2025-01-31",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1058",
+    "order_date": "2025-01-31",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1059",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1059",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1060",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1060",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1060",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1060",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1061",
+    "order_date": "2025-01-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1062",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1062",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1063",
+    "order_date": "2025-01-21",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1063",
+    "order_date": "2025-01-21",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1063",
+    "order_date": "2025-01-21",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1063",
+    "order_date": "2025-01-21",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1064",
+    "order_date": "2025-01-24",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1064",
+    "order_date": "2025-01-24",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1065",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1065",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1065",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1066",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1067",
+    "order_date": "2025-01-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1068",
+    "order_date": "2025-01-29",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1068",
+    "order_date": "2025-01-29",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1069",
+    "order_date": "2025-02-09",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1069",
+    "order_date": "2025-02-09",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1070",
+    "order_date": "2025-01-10",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1070",
+    "order_date": "2025-01-10",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1071",
+    "order_date": "2025-01-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1071",
+    "order_date": "2025-01-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1071",
+    "order_date": "2025-01-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1072",
+    "order_date": "2025-02-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1072",
+    "order_date": "2025-02-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1072",
+    "order_date": "2025-02-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-PEPPERON",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1072",
+    "order_date": "2025-02-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1073",
+    "order_date": "2025-02-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1073",
+    "order_date": "2025-02-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1073",
+    "order_date": "2025-02-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1073",
+    "order_date": "2025-02-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1074",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1074",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1074",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1074",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1075",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-PEPPERONI",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1075",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1075",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1075",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1076",
+    "order_date": "2025-01-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1077",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1077",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1078",
+    "order_date": "2025-02-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1078",
+    "order_date": "2025-02-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1079",
+    "order_date": "2025-02-17",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1079",
+    "order_date": "2025-02-17",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1079",
+    "order_date": "2025-02-17",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1080",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1080",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1080",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1081",
+    "order_date": "2025-02-24",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1081",
+    "order_date": "2025-02-24",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1082",
+    "order_date": "2025-01-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1083",
+    "order_date": "2025-02-09",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1084",
+    "order_date": "2025-01-16",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1084",
+    "order_date": "2025-01-16",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1085",
+    "order_date": "2025-01-02",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1085",
+    "order_date": "2025-01-02",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1085",
+    "order_date": "2025-01-02",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1085",
+    "order_date": "2025-01-02",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1086",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1086",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1087",
+    "order_date": "2025-02-06",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1087",
+    "order_date": "2025-02-06",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1088",
+    "order_date": "2025-01-16",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1089",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1089",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1089",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1090",
+    "order_date": "2025-01-19",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1091",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1091",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1091",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1091",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1092",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1092",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1092",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1092",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1093",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1093",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1094",
+    "order_date": "2025-02-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1095",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1096",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1096",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1096",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1096",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1097",
+    "order_date": "2025-02-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1098",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1098",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1098",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1099",
+    "order_date": "2025-02-27",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1099",
+    "order_date": "2025-02-27",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1099",
+    "order_date": "2025-02-27",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1100",
+    "order_date": "2025-02-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1100",
+    "order_date": "2025-02-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1100",
+    "order_date": "2025-02-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1101",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1101",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1102",
+    "order_date": "2025-02-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1102",
+    "order_date": "2025-02-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1102",
+    "order_date": "2025-02-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1103",
+    "order_date": "2025-01-01",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1103",
+    "order_date": "2025-01-01",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1103",
+    "order_date": "2025-01-01",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1104",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1105",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1105",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1105",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1105",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1106",
+    "order_date": "2025-01-26",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1106",
+    "order_date": "2025-01-26",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1107",
+    "order_date": "2025-01-18",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1107",
+    "order_date": "2025-01-18",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1107",
+    "order_date": "2025-01-18",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1108",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1108",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1108",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1108",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1109",
+    "order_date": "2025-02-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1109",
+    "order_date": "2025-02-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1109",
+    "order_date": "2025-02-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1110",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1111",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1112",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1112",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1112",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1112",
+    "order_date": "2025-01-30",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1113",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1113",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1113",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1113",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1114",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1114",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1114",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1115",
+    "order_date": "2025-01-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1115",
+    "order_date": "2025-01-02",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1116",
+    "order_date": "2025-02-09",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1117",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1117",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1118",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1118",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1118",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1119",
+    "order_date": "2025-02-27",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1119",
+    "order_date": "2025-02-27",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1119",
+    "order_date": "2025-02-27",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1120",
+    "order_date": "2025-01-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1120",
+    "order_date": "2025-01-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1121",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1121",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1121",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1121",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1122",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1122",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1123",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1123",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1123",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1123",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1124",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1125",
+    "order_date": "2025-02-08",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1125",
+    "order_date": "2025-02-08",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1125",
+    "order_date": "2025-02-08",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1125",
+    "order_date": "2025-02-08",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1126",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1126",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1126",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1126",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1127",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1127",
+    "order_date": "2025-02-26",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1128",
+    "order_date": "2025-02-02",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1129",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1130",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1131",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1131",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1131",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1132",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1132",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1132",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1133",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1133",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1133",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1133",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1134",
+    "order_date": "2025-01-07",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1135",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1135",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1136",
+    "order_date": "2025-02-21",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1136",
+    "order_date": "2025-02-21",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1136",
+    "order_date": "2025-02-21",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1137",
+    "order_date": "2025-01-09",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1137",
+    "order_date": "2025-01-09",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1138",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1138",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1138",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1139",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1139",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1139",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1140",
+    "order_date": "2025-01-14",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1141",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1142",
+    "order_date": "2025-02-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1142",
+    "order_date": "2025-02-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1142",
+    "order_date": "2025-02-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1143",
+    "order_date": "2025-01-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1143",
+    "order_date": "2025-01-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1143",
+    "order_date": "2025-01-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1143",
+    "order_date": "2025-01-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1144",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1144",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1145",
+    "order_date": "2025-01-16",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1145",
+    "order_date": "2025-01-16",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1146",
+    "order_date": "2025-01-11",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1147",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1148",
+    "order_date": "2025-01-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1148",
+    "order_date": "2025-01-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1149",
+    "order_date": "2025-01-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1149",
+    "order_date": "2025-01-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1150",
+    "order_date": "2025-01-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1150",
+    "order_date": "2025-01-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1150",
+    "order_date": "2025-01-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1150",
+    "order_date": "2025-01-22",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1151",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1151",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1152",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1152",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1152",
+    "order_date": "2025-02-23",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1153",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1153",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1153",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1154",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1155",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1156",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1156",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1156",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1156",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1157",
+    "order_date": "2025-02-16",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1157",
+    "order_date": "2025-02-16",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1157",
+    "order_date": "2025-02-16",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1158",
+    "order_date": "2025-02-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1158",
+    "order_date": "2025-02-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1158",
+    "order_date": "2025-02-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1159",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1159",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1159",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1160",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1160",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1160",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1161",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1161",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1161",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1161",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1162",
+    "order_date": "2025-01-23",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1162",
+    "order_date": "2025-01-23",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1163",
+    "order_date": "2025-02-24",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1163",
+    "order_date": "2025-02-24",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1164",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1164",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1164",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1164",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1165",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1165",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1165",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1166",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1167",
+    "order_date": "2025-01-24",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1168",
+    "order_date": "2025-01-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1168",
+    "order_date": "2025-01-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1169",
+    "order_date": "2025-02-17",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1170",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1170",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-PEPPERON",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1170",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1171",
+    "order_date": "2025-01-06",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1172",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1172",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1172",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1172",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1173",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1173",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1173",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1174",
+    "order_date": "2025-02-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1175",
+    "order_date": "2025-02-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1175",
+    "order_date": "2025-02-11",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1176",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1176",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1177",
+    "order_date": "2025-02-28",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1177",
+    "order_date": "2025-02-28",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1177",
+    "order_date": "2025-02-28",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1178",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1178",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1178",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1178",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1179",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1179",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1180",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1180",
+    "order_date": "2025-02-10",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1181",
+    "order_date": "2025-01-09",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1182",
+    "order_date": "2025-02-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1183",
+    "order_date": "2025-02-13",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1183",
+    "order_date": "2025-02-13",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1184",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1184",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1184",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1184",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1185",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1185",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1186",
+    "order_date": "2025-02-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1186",
+    "order_date": "2025-02-20",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1187",
+    "order_date": "2025-01-13",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1188",
+    "order_date": "2025-02-18",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1188",
+    "order_date": "2025-02-18",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1189",
+    "order_date": "2025-01-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1189",
+    "order_date": "2025-01-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1189",
+    "order_date": "2025-01-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1189",
+    "order_date": "2025-01-03",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1190",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1190",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1190",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1190",
+    "order_date": "2025-02-15",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1191",
+    "order_date": "2024-12-31",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1191",
+    "order_date": "2024-12-31",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1191",
+    "order_date": "2024-12-31",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1192",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1192",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1192",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1192",
+    "order_date": "2025-02-05",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1193",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1193",
+    "order_date": "2025-02-01",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1194",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1195",
+    "order_date": "2025-01-31",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1196",
+    "order_date": "2025-02-13",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1197",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1197",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1197",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1198",
+    "order_date": "2025-01-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1198",
+    "order_date": "2025-01-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1198",
+    "order_date": "2025-01-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1198",
+    "order_date": "2025-01-19",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1199",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1199",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1199",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1199",
+    "order_date": "2025-01-14",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1200",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1200",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1201",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1201",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1201",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1201",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1202",
+    "order_date": "2025-01-25",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1203",
+    "order_date": "2025-02-21",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1203",
+    "order_date": "2025-02-21",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1204",
+    "order_date": "2025-02-22",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1205",
+    "order_date": "2025-01-12",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1206",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1206",
+    "order_date": "2025-02-14",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1207",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1207",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1207",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1208",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1208",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1208",
+    "order_date": "2025-02-06",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1209",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1209",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1210",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1210",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1210",
+    "order_date": "2025-02-18",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1211",
+    "order_date": "2025-02-08",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1211",
+    "order_date": "2025-02-08",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1212",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1212",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1212",
+    "order_date": "2025-01-17",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1213",
+    "order_date": "2025-01-16",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1214",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1214",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  },
+  {
+    "order_id": "GC-1214",
+    "order_date": "2025-01-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1215",
+    "order_date": "2025-02-02",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1215",
+    "order_date": "2025-02-02",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1215",
+    "order_date": "2025-02-02",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1216",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1216",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1216",
+    "order_date": "2025-02-12",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1217",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1218",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1219",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1219",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1219",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1220",
+    "order_date": "2025-01-09",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1220",
+    "order_date": "2025-01-09",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1220",
+    "order_date": "2025-01-09",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1221",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1221",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1221",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1221",
+    "order_date": "2025-01-22",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1222",
+    "order_date": "2025-01-09",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1223",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 8
+  },
+  {
+    "order_id": "GC-1224",
+    "order_date": "2025-02-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1224",
+    "order_date": "2025-02-27",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1225",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1225",
+    "order_date": "2025-01-15",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1226",
+    "order_date": "2025-01-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1226",
+    "order_date": "2025-01-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1227",
+    "order_date": "2025-02-12",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1228",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1228",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1228",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1229",
+    "order_date": "2025-02-28",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1229",
+    "order_date": "2025-02-28",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1229",
+    "order_date": "2025-02-28",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1229",
+    "order_date": "2025-02-28",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1230",
+    "order_date": "2025-01-11",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1231",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1231",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1231",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1231",
+    "order_date": "2025-02-04",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1232",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 7
+  },
+  {
+    "order_id": "GC-1232",
+    "order_date": "2025-01-08",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1233",
+    "order_date": "2025-01-23",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1234",
+    "order_date": "2025-02-28",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1234",
+    "order_date": "2025-02-28",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1235",
+    "order_date": "2025-01-11",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1235",
+    "order_date": "2025-01-11",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1235",
+    "order_date": "2025-01-11",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1235",
+    "order_date": "2025-01-11",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1236",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1236",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1236",
+    "order_date": "2025-02-21",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1237",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1237",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1237",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1237",
+    "order_date": "2025-02-03",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1238",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1238",
+    "order_date": "2025-02-07",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1239",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1239",
+    "order_date": "2025-01-04",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1240",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1240",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1240",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1240",
+    "order_date": "2025-02-15",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 12
+  },
+  {
+    "order_id": "GC-1241",
+    "order_date": "2025-02-05",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1241",
+    "order_date": "2025-02-05",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-PEPPERON",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1242",
+    "order_date": "2025-01-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1242",
+    "order_date": "2025-01-24",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1243",
+    "order_date": "2025-02-04",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1243",
+    "order_date": "2025-02-04",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 6
+  },
+  {
+    "order_id": "GC-1243",
+    "order_date": "2025-02-04",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1243",
+    "order_date": "2025-02-04",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1244",
+    "order_date": "2025-01-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-MEAT",
+    "order_quantity": 17
+  },
+  {
+    "order_id": "GC-1244",
+    "order_date": "2025-01-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 14
+  },
+  {
+    "order_id": "GC-1244",
+    "order_date": "2025-01-01",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 15
+  },
+  {
+    "order_id": "GC-1245",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 20
+  },
+  {
+    "order_id": "GC-1245",
+    "order_date": "2025-01-20",
+    "channel": "Wholesale-Target",
+    "sku": "PZ-MEAT",
+    "order_quantity": 9
+  },
+  {
+    "order_id": "GC-1246",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 11
+  },
+  {
+    "order_id": "GC-1246",
+    "order_date": "2024-12-31",
+    "channel": "DTC-Shopify",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 16
+  },
+  {
+    "order_id": "GC-1247",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-VEGAN",
+    "order_quantity": 10
+  },
+  {
+    "order_id": "GC-1247",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 13
+  },
+  {
+    "order_id": "GC-1247",
+    "order_date": "2025-01-07",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1248",
+    "order_date": "2025-01-27",
+    "channel": "Wholesale-KeHE",
+    "sku": "PZ-MEAT",
+    "order_quantity": 19
+  },
+  {
+    "order_id": "GC-1249",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-GLUTENFREE",
+    "order_quantity": 5
+  },
+  {
+    "order_id": "GC-1249",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-FAMILY",
+    "order_quantity": 4
+  },
+  {
+    "order_id": "GC-1249",
+    "order_date": "2025-01-05",
+    "channel": "Wholesale-UNFI",
+    "sku": "PZ-CLASSIC",
+    "order_quantity": 18
+  }
+]

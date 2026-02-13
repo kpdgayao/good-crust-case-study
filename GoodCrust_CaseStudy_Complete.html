@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoodCrust Foods — DOSS ERP Implementation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0F1117;--surface:#1A1D27;--surface-2:#232733;--border:#2E3340;--border-accent:#3D4255;--text:#E8E9ED;--text-muted:#9499AD;--text-dim:#6B7089;--accent:#4F8CFF;--accent-glow:rgba(79,140,255,0.15);--green:#34D399;--green-dim:rgba(52,211,153,0.12);--amber:#FBBF24;--amber-dim:rgba(251,191,36,0.12);--red:#F87171;--red-dim:rgba(248,113,113,0.12);--purple:#A78BFA;--purple-dim:rgba(167,139,250,0.12);--cyan:#22D3EE;--cyan-dim:rgba(34,211,238,0.12);--orange:#FB923C;--orange-dim:rgba(251,146,60,0.12);--radius:10px;--radius-sm:6px;--font:'DM Sans',sans-serif;--mono:'JetBrains Mono',monospace;--display:'Fraunces',serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+.header{position:sticky;top:0;z-index:100;background:rgba(15,17,23,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 32px}
+.header-inner{max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:var(--display);font-weight:700;font-size:18px;display:flex;align-items:center;gap:10px}
+.logo-mark{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,var(--accent),var(--purple));display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;font-family:var(--mono)}
+.tabs{display:flex;gap:2px;background:var(--surface);border-radius:8px;padding:3px;overflow-x:auto}
+.tab{padding:7px 14px;border-radius:6px;font-size:12px;font-weight:500;color:var(--text-muted);cursor:pointer;transition:all .2s;border:none;background:none;font-family:var(--font);white-space:nowrap}
+.tab:hover{color:var(--text);background:var(--surface-2)}
+.tab.active{background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(79,140,255,.3)}
+.prompt-label{font-size:9px;font-family:var(--mono);font-weight:600;opacity:0.6;display:block;margin-bottom:1px}
+
+.content{max-width:1440px;margin:0 auto;padding:32px}
+.view{display:none}.view.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+.section-head{margin-bottom:28px}
+.section-head h1{font-family:var(--display);font-size:28px;font-weight:700;margin-bottom:6px}
+.section-head p{color:var(--text-muted);font-size:14px;max-width:700px}
+
+/* Flow grid */
+.flow-container{overflow-x:auto;padding-bottom:20px}
+.flow-grid{display:grid;grid-template-columns:160px repeat(5,1fr);gap:0;min-width:1100px}
+.flow-lane-label{display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;padding:16px 10px;border-right:2px solid var(--border);text-align:center}
+.flow-phase-header{padding:12px 14px;text-align:center;font-weight:600;font-size:11px;border-bottom:2px solid var(--border);border-right:1px solid var(--border);letter-spacing:.5px;text-transform:uppercase;color:var(--text-muted);background:var(--surface)}
+.flow-phase-header:last-child{border-right:none}
+.flow-cell{padding:10px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);min-height:100px;display:flex;flex-direction:column;gap:6px}
+.flow-node{background:var(--surface-2);border:1px solid var(--border-accent);border-radius:var(--radius-sm);padding:7px 9px;font-size:11px;line-height:1.4}
+.flow-node.api{border-left:3px solid var(--green)}.flow-node.edi{border-left:3px solid var(--purple)}.flow-node.manual{border-left:3px solid var(--amber)}.flow-node.internal{border-left:3px solid var(--accent)}.flow-node.money{border-left:3px solid var(--orange)}
+.flow-tag{display:inline-block;font-size:9px;font-weight:600;font-family:var(--mono);padding:2px 5px;border-radius:3px;margin-top:3px}
+.flow-tag.api{background:var(--green-dim);color:var(--green)}.flow-tag.edi{background:var(--purple-dim);color:var(--purple)}.flow-tag.manual{background:var(--amber-dim);color:var(--amber)}.flow-tag.internal{background:var(--accent-glow);color:var(--accent)}.flow-tag.money{background:var(--orange-dim);color:var(--orange)}
+.lane-goods{background:rgba(52,211,153,.03)}.lane-data{background:rgba(79,140,255,.03)}.lane-money{background:rgba(251,146,60,.03)}
+
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;padding:12px 16px;background:var(--surface);border-radius:var(--radius);border:1px solid var(--border)}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-muted)}
+.legend-dot{width:10px;height:10px;border-radius:3px}
+
+/* Cards */
+.options-grid,.spokes-grid,.erd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.spoke-card,.entity-card,.option-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);transition:all .2s}
+.spoke-card:hover,.entity-card:hover{border-color:var(--border-accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+
+.spoke-card{padding:18px}
+.spoke-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.spoke-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.spoke-header h3{font-size:13px;font-weight:600}
+.spoke-type{font-size:10px;color:var(--text-dim);font-family:var(--mono)}
+.data-row{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border);font-size:11px;color:var(--text-muted)}
+.data-row:last-child{border-bottom:none}
+.data-label{color:var(--text-dim)}.data-value{font-weight:500;color:var(--text);font-family:var(--mono);font-size:10px}
+.direction-badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;font-family:var(--mono)}
+.dir-in{background:var(--green-dim);color:var(--green)}.dir-out{background:var(--purple-dim);color:var(--purple)}.dir-bi{background:var(--cyan-dim);color:var(--cyan)}
+
+.hub-card{background:linear-gradient(135deg,rgba(79,140,255,.12),rgba(167,139,250,.08));border:2px solid var(--accent);border-radius:16px;padding:24px 40px;text-align:center;box-shadow:0 0 40px rgba(79,140,255,.1);position:relative}
+.hub-card h2{font-family:var(--display);font-size:20px;font-weight:700;margin-bottom:4px}
+.hub-badge{position:absolute;top:-10px;right:-10px;background:var(--accent);color:#fff;font-size:9px;font-weight:700;padding:3px 8px;border-radius:20px;font-family:var(--mono)}
+
+.entity-card{overflow:hidden}
+.entity-header{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.entity-header h3{font-size:13px;font-weight:700;font-family:var(--mono)}
+.entity-source{font-size:9px;font-weight:600;padding:2px 7px;border-radius:3px;font-family:var(--mono)}
+.src-doss{background:var(--accent-glow);color:var(--accent)}.src-shopify{background:var(--green-dim);color:var(--green)}.src-qbo{background:var(--orange-dim);color:var(--orange)}.src-3pl{background:var(--purple-dim);color:var(--purple)}
+.field-row{display:flex;align-items:center;gap:7px;padding:5px 14px;font-size:11px;border-bottom:1px solid var(--border);font-family:var(--mono)}
+.field-row:last-child{border-bottom:none}.field-row:hover{background:var(--surface-2)}
+.field-key{font-size:8px;font-weight:700;padding:1px 4px;border-radius:3px;flex-shrink:0}
+.pk{background:var(--amber-dim);color:var(--amber)}.fk{background:var(--cyan-dim);color:var(--cyan)}
+.field-name{color:var(--text);font-weight:500}.field-type{color:var(--text-dim);margin-left:auto;font-size:10px}
+
+.option-card{padding:18px;position:relative}
+.phase-badge{position:absolute;top:12px;right:12px;font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;font-family:var(--mono)}
+.phase-1{background:var(--green-dim);color:var(--green)}.phase-2{background:var(--amber-dim);color:var(--amber)}.phase-3{background:var(--purple-dim);color:var(--purple)}.phase-4{background:var(--cyan-dim);color:var(--cyan)}
+.option-card h3{font-size:13px;font-weight:600;margin-bottom:6px}
+.option-card p{font-size:11px;color:var(--text-muted);line-height:1.5}
+.option-pros{margin-top:8px;font-size:10px}
+.option-pros span{display:inline-block;padding:2px 6px;border-radius:3px;margin:2px 3px 2px 0;font-family:var(--mono)}
+.pro{background:var(--green-dim);color:var(--green)}.con{background:var(--red-dim);color:var(--red)}
+
+.rel-section{margin-top:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;overflow-x:auto}
+.rel-section h3{font-size:14px;font-weight:600;margin-bottom:12px}
+.rel-table{width:100%;border-collapse:collapse;font-size:11px}
+.rel-table th{text-align:left;padding:7px 10px;font-weight:600;color:var(--text-muted);border-bottom:2px solid var(--border);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+.rel-table td{padding:7px 10px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:11px}
+.rel-table tr:last-child td{border-bottom:none}.rel-table tr:hover td{background:var(--surface-2)}
+
+.callout{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:var(--radius);padding:14px 18px;margin-top:18px;font-size:12px;color:var(--text-muted)}
+.callout strong{color:var(--amber);font-weight:600}
+.callout-info{border-left-color:var(--accent)}.callout-info strong{color:var(--accent)}
+.callout-red{border-left-color:var(--red)}.callout-red strong{color:var(--red)}
+.callout-green{border-left-color:var(--green)}.callout-green strong{color:var(--green)}
+
+/* === PROMPT 2 SPECIFIC === */
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:24px}
+.kpi-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center}
+.kpi-value{font-size:28px;font-weight:700;font-family:var(--mono);line-height:1.2}
+.kpi-label{font-size:11px;color:var(--text-muted);margin-top:4px}
+.kpi-sub{font-size:10px;color:var(--text-dim);font-family:var(--mono);margin-top:2px}
+
+.data-table-wrap{overflow-x:auto;margin-top:16px}
+.data-table{width:100%;border-collapse:collapse;font-size:12px;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+.data-table th{text-align:left;padding:10px 12px;font-weight:600;color:var(--text-muted);background:var(--surface-2);border-bottom:2px solid var(--border);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+.data-table td{padding:8px 12px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:11px}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:rgba(79,140,255,.04)}
+.data-table .num{text-align:right}
+
+.bar-cell{position:relative}
+.bar-bg{position:absolute;left:0;top:0;bottom:0;border-radius:2px;opacity:.15}
+.bar-val{position:relative;z-index:1}
+
+.badge{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;font-family:var(--mono)}
+.badge-red{background:var(--red-dim);color:var(--red)}
+.badge-green{background:var(--green-dim);color:var(--green)}
+.badge-amber{background:var(--amber-dim);color:var(--amber)}
+
+.finding-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:14px}
+.finding-card h3{font-size:14px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.finding-card p{font-size:12px;color:var(--text-muted);line-height:1.6}
+.finding-num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:6px;font-size:12px;font-weight:700;font-family:var(--mono);flex-shrink:0}
+
+.metric-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.metric-card h3{font-size:15px;font-weight:700;margin-bottom:4px}
+.metric-card .metric-desc{font-size:12px;color:var(--text-muted);margin-bottom:12px}
+.metric-card .metric-formula{font-family:var(--mono);font-size:11px;background:var(--surface-2);padding:8px 12px;border-radius:var(--radius-sm);color:var(--cyan);margin-bottom:10px}
+.metric-card .metric-benchmark{font-size:11px;color:var(--text-dim)}
+
+.subsection{margin-top:28px;margin-bottom:14px;font-size:16px;font-weight:600;font-family:var(--display)}
+
+@media(max-width:768px){.header-inner{flex-direction:column;height:auto;padding:12px 0;gap:8px}.content{padding:20px 14px}.tabs{overflow-x:auto}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="logo"><div class="logo-mark">GC</div>GoodCrust Foods — DOSS ERP</div>
+    <div class="tabs">
+      <button class="tab active" onclick="showView('process',this)"><span class="prompt-label">PROMPT 1A</span>Process Flow</button>
+      <button class="tab" onclick="showView('architecture',this)"><span class="prompt-label">PROMPT 1B</span>Architecture</button>
+      <button class="tab" onclick="showView('datamodel',this)"><span class="prompt-label">PROMPT 1B</span>Data Model</button>
+      <button class="tab" onclick="showView('reconciliation',this)"><span class="prompt-label">PROMPT 2.1</span>Reconciliation</button>
+      <button class="tab" onclick="showView('tpl',this)"><span class="prompt-label">PROMPT 2.2</span>3PL Metrics</button>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- ========== PROCESS FLOW ========== -->
+<div class="view active" id="view-process">
+  <div class="section-head">
+    <h1>End-to-End Process Design</h1>
+    <p>Flow of Goods, Data, and Money across Procurement → Production → Fulfillment → Accounting. Integration methods annotated at each touchpoint.</p>
+  </div>
+  <div class="flow-container">
+    <div class="flow-grid">
+      <div class="flow-phase-header" style="border-right:2px solid var(--border)">Lane</div>
+      <div class="flow-phase-header">1. Order Capture</div>
+      <div class="flow-phase-header">2. Procurement</div>
+      <div class="flow-phase-header">3. Production</div>
+      <div class="flow-phase-header">4. Fulfillment</div>
+      <div class="flow-phase-header">5. Accounting</div>
+
+      <div class="flow-lane-label lane-goods" style="border-right:2px solid var(--border)">📦 Goods</div>
+      <div class="flow-cell lane-goods"><div class="flow-node internal">Customer places order (DTC or Wholesale PO)</div></div>
+      <div class="flow-cell lane-goods"><div class="flow-node internal">Raw materials shipped to co-packer per BOM</div></div>
+      <div class="flow-cell lane-goods"><div class="flow-node manual">Co-packer manufactures frozen pizzas per production order<span class="flow-tag manual">CO-PACKER</span></div></div>
+      <div class="flow-cell lane-goods"><div class="flow-node api">Finished goods → 3PL warehouse (JackRabbit or Kratos)</div><div class="flow-node api">3PL picks, packs, ships to customer/retailer DC<span class="flow-tag api">3PL</span></div></div>
+      <div class="flow-cell lane-goods"><div class="flow-node internal">Goods received. Returns/credits if needed</div></div>
+
+      <div class="flow-lane-label lane-data" style="border-right:2px solid var(--border)">🔄 Data</div>
+      <div class="flow-cell lane-data"><div class="flow-node api"><strong>DTC:</strong> Shopify → DOSS<span class="flow-tag api">API · Real-time</span></div><div class="flow-node edi"><strong>Wholesale:</strong> Retailer → DOSS via SPS<span class="flow-tag edi">EDI 850 PO</span></div></div>
+      <div class="flow-cell lane-data"><div class="flow-node internal">DOSS generates PO to co-packer (demand forecast + safety stock)<span class="flow-tag internal">DOSS ARP</span></div></div>
+      <div class="flow-cell lane-data"><div class="flow-node manual">Production order → co-packer; confirmation back<span class="flow-tag manual">EMAIL / SHEET</span></div><div class="flow-node internal">DOSS updates inventory on confirmation<span class="flow-tag internal">MANUAL ENTRY</span></div></div>
+      <div class="flow-cell lane-data"><div class="flow-node api">DOSS → 3PL fulfillment order<span class="flow-tag api">API / SFTP</span></div><div class="flow-node api">3PL → DOSS tracking + ship confirm<span class="flow-tag api">WEBHOOK</span></div><div class="flow-node edi">Wholesale: ASN to retailer<span class="flow-tag edi">EDI 856 ASN</span></div></div>
+      <div class="flow-cell lane-data"><div class="flow-node api">DOSS → QBO invoice on shipment<span class="flow-tag api">QBO API</span></div><div class="flow-node edi">Wholesale: Invoice to retailer<span class="flow-tag edi">EDI 810 INV</span></div></div>
+
+      <div class="flow-lane-label lane-money" style="border-right:2px solid var(--border)">💰 Money</div>
+      <div class="flow-cell lane-money"><div class="flow-node money"><strong>DTC:</strong> Paid at checkout<span class="flow-tag money">PREPAID</span></div><div class="flow-node money"><strong>Wholesale:</strong> Payment on terms<span class="flow-tag money">NET 30/60</span></div></div>
+      <div class="flow-cell lane-money"><div class="flow-node money">GoodCrust → co-packer per run<span class="flow-tag money">AP · QBO</span></div></div>
+      <div class="flow-cell lane-money"><div class="flow-node internal" style="opacity:.35">— No direct flow —</div></div>
+      <div class="flow-cell lane-money"><div class="flow-node money">GoodCrust → 3PL monthly fees<span class="flow-tag money">AP · QBO</span></div></div>
+      <div class="flow-cell lane-money"><div class="flow-node money"><strong>DTC:</strong> Shopify payout → bank → QBO</div><div class="flow-node money"><strong>Wholesale:</strong> Remittance → AR<span class="flow-tag edi">EDI 820</span></div><div class="flow-node api">COGS JE auto-posted<span class="flow-tag api">QBO API</span></div></div>
+    </div>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>API (Real-time)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--purple)"></div>EDI (SPS Commerce)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Manual / Email</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>Internal (DOSS)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--orange)"></div>Money Flow</div>
+  </div>
+
+  <div class="subsection" style="margin-top:32px">Co-Packer Integration Options</div>
+  <p style="color:var(--text-muted);font-size:13px;margin-bottom:16px">Phased approach to reduce the manual bottleneck at the co-packer integration point.</p>
+  <div class="options-grid">
+    <div class="option-card"><span class="phase-badge phase-1">PHASE 1 · NOW</span><h3>Structured Email Templates</h3><p>Standardize production order emails with fixed fields. Ops team manually enters completion data into DOSS.</p><div class="option-pros"><span class="pro">+ Zero cost</span><span class="pro">+ No change for co-packer</span><span class="con">− Manual lag 1-3 days</span></div></div>
+    <div class="option-card"><span class="phase-badge phase-2">PHASE 2 · 1-2 MO</span><h3>Shared Google Sheet</h3><p>DOSS auto-populates a Sheet with production orders. Co-packer updates status columns. DOSS watches via Sheets API.</p><div class="option-pros"><span class="pro">+ Familiar UX</span><span class="pro">+ Near real-time</span><span class="con">− Limited validation</span></div></div>
+    <div class="option-card"><span class="phase-badge phase-3">PHASE 3 · 3-6 MO</span><h3>Supplier Portal</h3><p>Simple web form where co-packer views orders, confirms qty, uploads lot/batch info. Data flows directly to DOSS API.</p><div class="option-pros"><span class="pro">+ Structured data</span><span class="pro">+ Lot traceability</span><span class="con">− Training needed</span></div></div>
+    <div class="option-card"><span class="phase-badge phase-4">PHASE 4 · FUTURE</span><h3>EDI / Full Integration</h3><p>If co-packer upgrades systems, establish EDI 850/855/856 or direct API. Full automation from PO to receipt.</p><div class="option-pros"><span class="pro">+ Fully automated</span><span class="pro">+ Real-time</span><span class="con">− Depends on co-packer</span></div></div>
+  </div>
+  <div class="callout"><strong>⚠️ Key Risk:</strong> The co-packer is the single manual bottleneck. Until Phase 2+, inventory visibility between production and 3PL receipt has a 1-3 day lag — impacting demand planning and fulfillment SLAs.</div>
+</div>
+
+<!-- ========== ARCHITECTURE ========== -->
+<div class="view" id="view-architecture">
+  <div class="section-head">
+    <h1>System Architecture</h1>
+    <p>Logical integration linking DOSS (hub), QBO, Shopify, and two 3PLs. All data flows through DOSS as single source of truth.</p>
+  </div>
+  <div class="spokes-grid">
+    <div class="spoke-card"><div class="spoke-header"><div class="spoke-icon" style="background:var(--green-dim);color:var(--green)">🛒</div><div><h3>Shopify (DTC)</h3><div class="spoke-type">E-Commerce</div></div></div><div class="spoke-detail"><div class="data-row"><span class="data-label">Method</span><span class="data-value"><span class="direction-badge dir-bi">↔ BI-DIR</span> REST API</span></div><div class="data-row"><span class="data-label">Frequency</span><span class="data-value">Real-time webhooks</span></div><div class="data-row"><span class="data-label">In</span><span class="data-value">Orders, customers, returns</span></div><div class="data-row"><span class="data-label">Out</span><span class="data-value">Inventory, catalog, tracking</span></div><div class="data-row"><span class="data-label">Connector</span><span class="data-value">DOSS native</span></div></div></div>
+    <div class="spoke-card"><div class="spoke-header"><div class="spoke-icon" style="background:var(--purple-dim);color:var(--purple)">🏢</div><div><h3>Wholesale (Target/UNFI/KeHE)</h3><div class="spoke-type">Retail Partners</div></div></div><div class="spoke-detail"><div class="data-row"><span class="data-label">Method</span><span class="data-value"><span class="direction-badge dir-bi">↔ BI-DIR</span> EDI via SPS</span></div><div class="data-row"><span class="data-label">Documents</span><span class="data-value">850, 855, 856, 810, 820</span></div><div class="data-row"><span class="data-label">In</span><span class="data-value">POs, PO changes, remittance</span></div><div class="data-row"><span class="data-label">Out</span><span class="data-value">PO ack, ASN, invoices</span></div><div class="data-row"><span class="data-label">Connector</span><span class="data-value">DOSS → SPS Commerce</span></div></div></div>
+    <div class="spoke-card"><div class="spoke-header"><div class="spoke-icon" style="background:var(--amber-dim);color:var(--amber)">🏭</div><div><h3>Co-Packer</h3><div class="spoke-type">Contract Manufacturer</div></div></div><div class="spoke-detail"><div class="data-row"><span class="data-label">Method</span><span class="data-value"><span class="direction-badge" style="background:var(--amber-dim);color:var(--amber)">⚠ MANUAL</span></span></div><div class="data-row"><span class="data-label">Frequency</span><span class="data-value">Per run (1-3 day lag)</span></div><div class="data-row"><span class="data-label">Out</span><span class="data-value">Production orders, BOM</span></div><div class="data-row"><span class="data-label">In</span><span class="data-value">Completion qty, lot/batch</span></div><div class="data-row"><span class="data-label">Risk</span><span class="data-value" style="color:var(--amber)">⚠ HIGH — see options</span></div></div></div>
+  </div>
+
+  <div style="display:flex;justify-content:center;margin:24px 0">
+    <div class="hub-card"><span class="hub-badge">SINGLE SOURCE OF TRUTH</span><h2>DOSS Operations Cloud (ERP)</h2><p style="margin-top:6px;color:var(--text-muted);font-size:12px">Unified Master Data · ARP Workflows · IDP Data Platform · Real-time HTAB DB</p><div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap"><span class="flow-tag internal" style="font-size:10px">Orders</span><span class="flow-tag internal" style="font-size:10px">Inventory</span><span class="flow-tag internal" style="font-size:10px">Procurement</span><span class="flow-tag internal" style="font-size:10px">Production</span><span class="flow-tag internal" style="font-size:10px">Fulfillment</span><span class="flow-tag internal" style="font-size:10px">Catalog</span></div></div>
+  </div>
+
+  <div class="spokes-grid">
+    <div class="spoke-card"><div class="spoke-header"><div class="spoke-icon" style="background:var(--cyan-dim);color:var(--cyan)">🐰</div><div><h3>3PL — JackRabbit</h3><div class="spoke-type">East + West</div></div></div><div class="spoke-detail"><div class="data-row"><span class="data-label">Method</span><span class="data-value"><span class="direction-badge dir-bi">↔ BI-DIR</span> API/SFTP</span></div><div class="data-row"><span class="data-label">Out</span><span class="data-value">Fulfillment orders (940)</span></div><div class="data-row"><span class="data-label">In</span><span class="data-value">Ship confirm + tracking (945)</span></div></div></div>
+    <div class="spoke-card"><div class="spoke-header"><div class="spoke-icon" style="background:var(--cyan-dim);color:var(--cyan)">⚡</div><div><h3>3PL — Kratos</h3><div class="spoke-type">East + West</div></div></div><div class="spoke-detail"><div class="data-row"><span class="data-label">Method</span><span class="data-value"><span class="direction-badge dir-bi">↔ BI-DIR</span> API/SFTP</span></div><div class="data-row"><span class="data-label">Out</span><span class="data-value">Fulfillment orders (940)</span></div><div class="data-row"><span class="data-label">In</span><span class="data-value">Ship confirm + tracking (945)</span></div></div></div>
+    <div class="spoke-card"><div class="spoke-header"><div class="spoke-icon" style="background:var(--orange-dim);color:var(--orange)">📒</div><div><h3>QuickBooks Online</h3><div class="spoke-type">Financial GL</div></div></div><div class="spoke-detail"><div class="data-row"><span class="data-label">Method</span><span class="data-value"><span class="direction-badge dir-out">→ OUT</span> QBO API</span></div><div class="data-row"><span class="data-label">Trigger</span><span class="data-value">On shipment confirm</span></div><div class="data-row"><span class="data-label">Out</span><span class="data-value">Invoices, COGS JEs, AP bills</span></div><div class="data-row"><span class="data-label">In</span><span class="data-value">Payment status, bank feeds</span></div></div></div>
+  </div>
+  <div class="callout callout-info" style="margin-top:20px"><strong>ℹ️ Design Principle:</strong> No direct integration between external systems. All data flows through DOSS to prevent data conflicts and maintain audit trail integrity. QBO is the financial system of record; DOSS is the operational system of record.</div>
+</div>
+
+<!-- ========== DATA MODEL ========== -->
+<div class="view" id="view-datamodel">
+  <div class="section-head">
+    <h1>Core Data Model</h1>
+    <p>10 key objects with PK/FK relationships. Color-coded by system of origin (mastered vs. synced).</p>
+  </div>
+  <div class="erd-grid">
+    <div class="entity-card"><div class="entity-header"><h3>Product_SKU</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">sku_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">sku_code</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">product_name</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">upc_barcode</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">unit_cost</span><span class="field-type">DECIMAL</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">case_pack_qty</span><span class="field-type">INT</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">shopify_product_id</span><span class="field-type">VARCHAR</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Sales_Order</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">order_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">customer_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">channel</span><span class="field-type">ENUM</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">order_date</span><span class="field-type">DATETIME</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">status</span><span class="field-type">ENUM</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">edi_po_number</span><span class="field-type">VARCHAR</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Order_Line</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">line_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">order_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">sku_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">ordered_qty</span><span class="field-type">INT</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">unit_price</span><span class="field-type">DECIMAL</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Fulfillment_Order</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">fulfillment_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">order_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">location</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">ship_date</span><span class="field-type">DATETIME</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">carrier</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">tracking_number</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">erp_sync_status</span><span class="field-type">ENUM</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Fulfillment_Line</h3><span class="entity-source src-3pl">3PL SYNC</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">ful_line_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">fulfillment_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">sku_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">fulfilled_qty</span><span class="field-type">INT</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">lot_number</span><span class="field-type">VARCHAR</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Production_Order</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">production_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">sku_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">requested_qty</span><span class="field-type">INT</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">completed_qty</span><span class="field-type">INT</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">co_packer_ref</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">status</span><span class="field-type">ENUM</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Customer</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">customer_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">name</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">channel_type</span><span class="field-type">ENUM</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">payment_terms</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">qbo_customer_id</span><span class="field-type">VARCHAR</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Invoice</h3><span class="entity-source src-qbo">→ QBO</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">invoice_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">order_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">customer_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">total_amount</span><span class="field-type">DECIMAL</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">payment_status</span><span class="field-type">ENUM</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">qbo_invoice_id</span><span class="field-type">VARCHAR</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>Inventory_Txn</h3><span class="entity-source src-doss">DOSS</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">txn_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key fk">FK</span><span class="field-name">sku_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">txn_type</span><span class="field-type">ENUM</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">quantity</span><span class="field-type">INT</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">location</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">timestamp</span><span class="field-type">DATETIME</span></div></div></div>
+    <div class="entity-card"><div class="entity-header"><h3>GL_Journal_Entry</h3><span class="entity-source src-qbo">→ QBO</span></div><div class="entity-fields"><div class="field-row"><span class="field-key pk">PK</span><span class="field-name">je_id</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">je_date</span><span class="field-type">DATE</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">account_code</span><span class="field-type">VARCHAR</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">debit</span><span class="field-type">DECIMAL</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">credit</span><span class="field-type">DECIMAL</span></div><div class="field-row"><span class="field-key" style="visibility:hidden">--</span><span class="field-name">source_type</span><span class="field-type">ENUM</span></div></div></div>
+  </div>
+  <div class="rel-section"><h3>Entity Relationships</h3><table class="rel-table"><thead><tr><th>Parent</th><th>Child</th><th>Cardinality</th><th>Join Key</th></tr></thead><tbody>
+    <tr><td>Customer</td><td>Sales_Order</td><td>1 : N</td><td>customer_id</td></tr>
+    <tr><td>Sales_Order</td><td>Order_Line</td><td>1 : N</td><td>order_id</td></tr>
+    <tr><td>Product_SKU</td><td>Order_Line</td><td>1 : N</td><td>sku_id</td></tr>
+    <tr><td>Sales_Order</td><td>Fulfillment_Order</td><td>1 : N</td><td>order_id</td></tr>
+    <tr><td>Fulfillment_Order</td><td>Fulfillment_Line</td><td>1 : N</td><td>fulfillment_id</td></tr>
+    <tr><td>Product_SKU</td><td>Production_Order</td><td>1 : N</td><td>sku_id</td></tr>
+    <tr><td>Sales_Order</td><td>Invoice</td><td>1 : 1</td><td>order_id</td></tr>
+    <tr><td>Product_SKU</td><td>Inventory_Txn</td><td>1 : N</td><td>sku_id</td></tr>
+    <tr><td>Invoice</td><td>GL_Journal_Entry</td><td>1 : N</td><td>source ref</td></tr>
+  </tbody></table></div>
+  <div class="callout callout-info" style="margin-top:16px"><strong>ℹ️ Design Decision:</strong> Inventory_Txn is an event log, not a snapshot. Current stock = SUM(transactions) by SKU + location. This supports full audit trail and FEFO (First Expired, First Out) for frozen goods.</div>
+</div>
+
+<!-- ========== RECONCILIATION ========== -->
+<div class="view" id="view-reconciliation">
+  <div class="section-head">
+    <h1>Order-to-Fulfillment Reconciliation</h1>
+    <p>Analysis of discrepancies between Order Master (606 lines) and Fulfillment Lines (778 lines). Data period: Jan 1 – Mar 1, 2025.</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="kpi-value" style="color:var(--accent)">95.9%</div><div class="kpi-label">Overall Fill Rate</div><div class="kpi-sub">7,053 of 7,353 units</div></div>
+    <div class="kpi-card"><div class="kpi-value" style="color:var(--red)">110</div><div class="kpi-label">Under-Fulfilled Lines</div><div class="kpi-sub">of 606 total (18.2%)</div></div>
+    <div class="kpi-card"><div class="kpi-value" style="color:var(--amber)">300</div><div class="kpi-label">Units Short</div><div class="kpi-sub">across all channels</div></div>
+    <div class="kpi-card"><div class="kpi-value" style="color:var(--amber)">235</div><div class="kpi-label">Pending ERP Sync</div><div class="kpi-sub">of 778 fulfillment lines (30.2%)</div></div>
+    <div class="kpi-card"><div class="kpi-value" style="color:var(--red)">1</div><div class="kpi-label">Missing Order</div><div class="kpi-sub">GC-1019 — zero fulfillment</div></div>
+  </div>
+
+  <!-- Root Cause Findings -->
+  <div class="subsection">Root Cause Analysis</div>
+
+  <div class="finding-card">
+    <h3><span class="finding-num" style="background:var(--red-dim);color:var(--red)">1</span> SKU Typo: PZ-PEPPERON vs PZ-PEPPERONI <span class="badge badge-red">CRITICAL · OPERATIONAL</span></h3>
+    <p>4 order lines use the misspelled SKU <code style="background:var(--surface-2);padding:2px 6px;border-radius:3px;font-family:var(--mono);font-size:11px">PZ-PEPPERON</code> instead of <code style="background:var(--surface-2);padding:2px 6px;border-radius:3px;font-family:var(--mono);font-size:11px">PZ-PEPPERONI</code>. All 4 have a <strong style="color:var(--red)">0% fill rate</strong> (66 units completely unfulfilled) because the 3PL cannot match the misspelled SKU to inventory. This single typo accounts for <strong style="color:var(--red)">22% of all shortfall</strong> (66 of 300 units). Order GC-1019 has zero fulfillment lines at all — likely because the misspelled SKU was rejected outright by the 3PL system.</p>
+    <p style="margin-top:8px"><strong style="color:var(--green)">Fix:</strong> Implement SKU validation in DOSS at order entry. Add a master SKU lookup that rejects or flags unrecognized codes before orders are routed to 3PLs.</p>
+  </div>
+
+  <div class="finding-card">
+    <h3><span class="finding-num" style="background:var(--amber-dim);color:var(--amber)">2</span> 30% of Fulfillment Lines Stuck in "Pending" Sync <span class="badge badge-amber">HIGH · TECHNICAL</span></h3>
+    <p>235 of 778 fulfillment lines (30.2%) have <code style="background:var(--surface-2);padding:2px 6px;border-radius:3px;font-family:var(--mono);font-size:11px">erp_sync_status = Pending</code>. All 235 are missing carrier, tracking number, and ship date — meaning these shipments may have occurred but DOSS doesn't know about them. This is distributed evenly across all 4 locations, suggesting a systemic integration issue, not a single 3PL problem.</p>
+    <p style="margin-top:8px"><strong style="color:var(--green)">Fix:</strong> Investigate 3PL webhook/SFTP reliability. Implement a daily reconciliation job in DOSS that queries 3PL APIs for unsynced fulfillments. Add monitoring alerts when sync backlog exceeds threshold.</p>
+  </div>
+
+  <div class="finding-card">
+    <h3><span class="finding-num" style="background:var(--accent-glow);color:var(--accent)">3</span> DTC-Shopify Has Worst Fill Rate (92.9%) <span class="badge badge-amber">MEDIUM · OPERATIONAL</span></h3>
+    <p>DTC has the highest shortfall (130 units) and lowest fill rate across channels. This is the most customer-visible issue — DTC customers expect to receive exactly what they ordered. 66 of the 130 shortfall is from the SKU typo (Finding #1), but the remaining 64 units across other SKUs suggest partial fulfillment issues at the 3PL level.</p>
+    <p style="margin-top:8px"><strong style="color:var(--green)">Fix:</strong> After resolving the SKU typo, monitor DTC fill rate separately. Consider allocating safety stock specifically for DTC to avoid cross-channel stockouts.</p>
+  </div>
+
+  <div class="finding-card">
+    <h3><span class="finding-num" style="background:var(--purple-dim);color:var(--purple)">4</span> Naming Inconsistency Across 3PLs <span class="badge badge-amber">LOW · TECHNICAL</span></h3>
+    <p>JackRabbit locations use hyphens (<code style="background:var(--surface-2);padding:2px 6px;border-radius:3px;font-family:var(--mono);font-size:11px">3PL-JackRabbit-East</code>) while Kratos uses underscores (<code style="background:var(--surface-2);padding:2px 6px;border-radius:3px;font-family:var(--mono);font-size:11px">3PL_Kratos_East</code>). This suggests different integration methods or manual entry for each 3PL — a potential source of data quality issues downstream.</p>
+    <p style="margin-top:8px"><strong style="color:var(--green)">Fix:</strong> Standardize location naming in DOSS master data. Apply transformation rules at the integration layer to normalize incoming 3PL data.</p>
+  </div>
+
+  <!-- Tables -->
+  <div class="subsection">Fill Rate by Channel</div>
+  <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Channel</th><th class="num">Order Lines</th><th class="num">Units Ordered</th><th class="num">Units Fulfilled</th><th class="num">Shortfall</th><th class="num">Fill Rate</th></tr></thead><tbody>
+    <tr><td>DTC-Shopify</td><td class="num">145</td><td class="num">1,831</td><td class="num">1,701</td><td class="num" style="color:var(--red)">130</td><td class="num"><span class="badge badge-red">92.9%</span></td></tr>
+    <tr><td>Wholesale-KeHE</td><td class="num">137</td><td class="num">1,572</td><td class="num">1,522</td><td class="num">50</td><td class="num"><span class="badge badge-green">96.8%</span></td></tr>
+    <tr><td>Wholesale-Target</td><td class="num">171</td><td class="num">2,162</td><td class="num">2,092</td><td class="num">70</td><td class="num"><span class="badge badge-green">96.8%</span></td></tr>
+    <tr><td>Wholesale-UNFI</td><td class="num">153</td><td class="num">1,788</td><td class="num">1,738</td><td class="num">50</td><td class="num"><span class="badge badge-green">97.2%</span></td></tr>
+    <tr style="font-weight:700;background:var(--surface-2)"><td>TOTAL</td><td class="num">606</td><td class="num">7,353</td><td class="num">7,053</td><td class="num" style="color:var(--red)">300</td><td class="num">95.9%</td></tr>
+  </tbody></table></div>
+
+  <div class="subsection">Fill Rate by SKU</div>
+  <div class="data-table-wrap"><table class="data-table"><thead><tr><th>SKU</th><th class="num">Lines</th><th class="num">Ordered</th><th class="num">Fulfilled</th><th class="num">Shortfall</th><th class="num">Fill Rate</th><th>Note</th></tr></thead><tbody>
+    <tr style="background:rgba(248,113,113,.06)"><td style="color:var(--red);font-weight:600">PZ-PEPPERON</td><td class="num">4</td><td class="num">66</td><td class="num">0</td><td class="num" style="color:var(--red);font-weight:700">66</td><td class="num"><span class="badge badge-red">0.0%</span></td><td style="color:var(--red);font-size:10px">⚠ TYPO — should be PZ-PEPPERONI</td></tr>
+    <tr><td>PZ-PEPPERONI</td><td class="num">8</td><td class="num">110</td><td class="num">107</td><td class="num">3</td><td class="num"><span class="badge badge-green">97.3%</span></td><td style="font-size:10px">Correct SKU — normal fill</td></tr>
+    <tr><td>PZ-FAMILY</td><td class="num">138</td><td class="num">1,704</td><td class="num">1,641</td><td class="num">63</td><td class="num"><span class="badge badge-green">96.3%</span></td><td></td></tr>
+    <tr><td>PZ-MEAT</td><td class="num">119</td><td class="num">1,349</td><td class="num">1,304</td><td class="num">45</td><td class="num"><span class="badge badge-green">96.7%</span></td><td></td></tr>
+    <tr><td>PZ-CLASSIC</td><td class="num">117</td><td class="num">1,506</td><td class="num">1,463</td><td class="num">43</td><td class="num"><span class="badge badge-green">97.1%</span></td><td></td></tr>
+    <tr><td>PZ-VEGAN</td><td class="num">106</td><td class="num">1,240</td><td class="num">1,197</td><td class="num">43</td><td class="num"><span class="badge badge-green">96.5%</span></td><td></td></tr>
+    <tr><td>PZ-GLUTENFREE</td><td class="num">114</td><td class="num">1,378</td><td class="num">1,341</td><td class="num">37</td><td class="num"><span class="badge badge-green">97.3%</span></td><td></td></tr>
+  </tbody></table></div>
+
+  <div class="subsection">Top Shortfall Order Lines</div>
+  <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Order ID</th><th>SKU</th><th>Channel</th><th class="num">Ordered</th><th class="num">Fulfilled</th><th class="num">Short</th></tr></thead><tbody>
+    <tr style="background:rgba(248,113,113,.06)"><td>GC-1170</td><td style="color:var(--red)">PZ-PEPPERON</td><td>DTC-Shopify</td><td class="num">19</td><td class="num">0</td><td class="num" style="color:var(--red);font-weight:700">19</td></tr>
+    <tr style="background:rgba(248,113,113,.06)"><td>GC-1072</td><td style="color:var(--red)">PZ-PEPPERON</td><td>DTC-Shopify</td><td class="num">18</td><td class="num">0</td><td class="num" style="color:var(--red);font-weight:700">18</td></tr>
+    <tr style="background:rgba(248,113,113,.06)"><td>GC-1241</td><td style="color:var(--red)">PZ-PEPPERON</td><td>DTC-Shopify</td><td class="num">15</td><td class="num">0</td><td class="num" style="color:var(--red);font-weight:700">15</td></tr>
+    <tr><td>GC-1100</td><td>PZ-VEGAN</td><td>DTC-Shopify</td><td class="num">15</td><td class="num">0</td><td class="num" style="color:var(--red)">15</td></tr>
+    <tr style="background:rgba(248,113,113,.06)"><td>GC-1019</td><td style="color:var(--red)">PZ-PEPPERON</td><td>DTC-Shopify</td><td class="num">14</td><td class="num">0</td><td class="num" style="color:var(--red);font-weight:700">14</td></tr>
+    <tr><td>GC-1215</td><td>PZ-CLASSIC</td><td>Wholesale-KeHE</td><td class="num">19</td><td class="num">13</td><td class="num">6</td></tr>
+    <tr><td>GC-1046</td><td>PZ-MEAT</td><td>Wholesale-UNFI</td><td class="num">14</td><td class="num">9</td><td class="num">5</td></tr>
+    <tr><td>GC-1177</td><td>PZ-FAMILY</td><td>DTC-Shopify</td><td class="num">20</td><td class="num">16</td><td class="num">4</td></tr>
+    <tr><td>GC-1229</td><td>PZ-FAMILY</td><td>Wholesale-Target</td><td class="num">14</td><td class="num">10</td><td class="num">4</td></tr>
+    <tr><td>GC-1049</td><td>PZ-CLASSIC</td><td>Wholesale-UNFI</td><td class="num">18</td><td class="num">14</td><td class="num">4</td></tr>
+  </tbody></table></div>
+
+  <div class="callout callout-red" style="margin-top:18px"><strong>🔑 Key Insight:</strong> The top 5 shortfalls are all PZ-PEPPERON (typo) on DTC-Shopify — these are the customer complaints mentioned in the scenario. The root cause is <strong>operational</strong> (data quality at order entry), not a 3PL or inventory problem. Fixing the SKU validation would eliminate 22% of all shortfall immediately.</div>
+</div>
+
+<!-- ========== 3PL METRICS ========== -->
+<div class="view" id="view-tpl">
+  <div class="section-head">
+    <h1>3PL Contract Renewal Metrics</h1>
+    <p>Top 4 KPIs for evaluating JackRabbit vs Kratos performance. Assumes comparable fulfillment locations and no routing delays.</p>
+  </div>
+
+  <div class="options-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="metric-card">
+      <h3>1. Order Fill Rate (%)</h3>
+      <div class="metric-desc">Percentage of ordered units successfully fulfilled. The single most important metric for customer satisfaction.</div>
+      <div class="metric-formula">Fill Rate = (Fulfilled Qty / Ordered Qty) × 100</div>
+      <div class="metric-benchmark"><strong>Industry benchmark:</strong> 95-98% for frozen CPG. Below 95% triggers retailer chargebacks.</div>
+    </div>
+    <div class="metric-card">
+      <h3>2. ERP Sync Reliability (%)</h3>
+      <div class="metric-desc">Percentage of fulfillment lines that successfully sync back to DOSS. Pending lines mean GoodCrust has no visibility into shipment status.</div>
+      <div class="metric-formula">Sync Rate = (Synced Lines / Total Lines) × 100</div>
+      <div class="metric-benchmark"><strong>Target:</strong> >95%. Current average is ~70% — unacceptable for real-time inventory management.</div>
+    </div>
+    <div class="metric-card">
+      <h3>3. Average Ship Lag (Days)</h3>
+      <div class="metric-desc">Days between order date and ship date. Critical for DTC (customer expects 2-3 days) and wholesale (retailer compliance windows).</div>
+      <div class="metric-formula">Ship Lag = Ship Date − Order Date</div>
+      <div class="metric-benchmark"><strong>Target:</strong> ≤2 days for DTC, ≤3 days for wholesale. Current avg: 3.5-3.7 days.</div>
+    </div>
+    <div class="metric-card">
+      <h3>4. Split Shipment Rate (%)</h3>
+      <div class="metric-desc">Percentage of orders requiring multiple shipments. Each split increases shipping cost and customer confusion.</div>
+      <div class="metric-formula">Split Rate = (Orders w/ 2+ shipments / Total Orders) × 100</div>
+      <div class="metric-benchmark"><strong>Target:</strong> <20%. Current: 84% of orders have 2+ fulfillment lines — needs investigation.</div>
+    </div>
+  </div>
+
+  <div class="subsection">3PL Comparison: JackRabbit vs Kratos</div>
+  <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Location</th><th class="num">Lines</th><th class="num">Synced</th><th class="num">Pending</th><th class="num">Sync Rate</th><th class="num">Avg Lag</th><th class="num">Median Lag</th><th class="num">Max Lag</th></tr></thead><tbody>
+    <tr><td>3PL-JackRabbit-East</td><td class="num">186</td><td class="num">126</td><td class="num">60</td><td class="num">67.7%</td><td class="num">3.5d</td><td class="num">3.0d</td><td class="num">6d</td></tr>
+    <tr><td>3PL-JackRabbit-West</td><td class="num">193</td><td class="num">140</td><td class="num">53</td><td class="num">72.5%</td><td class="num">3.5d</td><td class="num">3.0d</td><td class="num">6d</td></tr>
+    <tr style="font-weight:600;background:var(--surface-2)"><td>JackRabbit (Combined)</td><td class="num">379</td><td class="num">266</td><td class="num">113</td><td class="num"><span class="badge badge-amber">70.2%</span></td><td class="num">3.5d</td><td class="num">3.0d</td><td class="num">6d</td></tr>
+    <tr><td colspan="8" style="padding:4px"></td></tr>
+    <tr><td>3PL_Kratos_East</td><td class="num">187</td><td class="num">126</td><td class="num">61</td><td class="num">67.4%</td><td class="num">3.5d</td><td class="num">3.0d</td><td class="num">6d</td></tr>
+    <tr><td>3PL_Kratos_West</td><td class="num">212</td><td class="num">151</td><td class="num">61</td><td class="num">71.2%</td><td class="num">3.7d</td><td class="num">4.0d</td><td class="num">6d</td></tr>
+    <tr style="font-weight:600;background:var(--surface-2)"><td>Kratos (Combined)</td><td class="num">399</td><td class="num">277</td><td class="num">122</td><td class="num"><span class="badge badge-amber">69.4%</span></td><td class="num">3.6d</td><td class="num">4.0d</td><td class="num">6d</td></tr>
+  </tbody></table></div>
+
+  <div class="subsection">Recommendation</div>
+  <div class="finding-card">
+    <h3><span class="finding-num" style="background:var(--accent-glow);color:var(--accent)">→</span> Both 3PLs Perform Similarly — Focus on Integration Quality First</h3>
+    <p>JackRabbit and Kratos show nearly identical performance across all 4 metrics. The differences are marginal: JackRabbit has a slightly better sync rate (70.2% vs 69.4%) and ship lag (3.5d vs 3.6d median), but neither meets acceptable thresholds. Before using this data to negotiate contracts, GoodCrust should:</p>
+    <p style="margin-top:8px">
+      <strong style="color:var(--cyan)">1.</strong> Resolve the 30% pending sync issue — this may be a DOSS integration bug, not a 3PL fault. If so, the "real" metrics could look very different once syncs are recovered.<br>
+      <strong style="color:var(--cyan)">2.</strong> Request historical data directly from each 3PL's WMS to validate against DOSS records.<br>
+      <strong style="color:var(--cyan)">3.</strong> After cleaning data: if one 3PL consistently outperforms on fill rate and ship lag, consolidate volume there for leverage. If still comparable, negotiate on price/SLA terms instead.
+    </p>
+  </div>
+
+  <div class="callout callout-green" style="margin-top:16px"><strong>💡 Contract Negotiation Leverage:</strong> The 30% pending sync rate is ammunition regardless of which 3PL you're negotiating with. Include SLA clauses requiring ≥95% sync rate within 24 hours of shipment, with financial penalties for non-compliance. This protects GoodCrust's inventory visibility and customer experience.</div>
+</div>
+
+</div>
+
+<script>
+function showView(id, el) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('view-' + id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
