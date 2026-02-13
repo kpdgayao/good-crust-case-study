@@ -23,18 +23,18 @@ function SpokeCard({
           {icon}
         </div>
         <div>
-          <h3 className="text-[13px] font-semibold">{title}</h3>
-          <div className="text-[10px] text-text-dim font-mono">{type}</div>
+          <h3 className="text-sm font-semibold">{title}</h3>
+          <div className="text-xs text-text-dim font-mono">{type}</div>
         </div>
       </div>
       <div className="space-y-0">
         {rows.map((r) => (
           <div
             key={r.label}
-            className="flex justify-between py-1 border-b border-border last:border-b-0 text-[11px] text-text-muted"
+            className="flex justify-between py-1.5 border-b border-border last:border-b-0 text-[13px] text-text-muted"
           >
             <span className="text-text-dim">{r.label}</span>
-            <span className="font-medium text-text font-mono text-[10px]">
+            <span className="font-medium text-text font-mono text-xs">
               {r.value}
             </span>
           </div>
@@ -110,20 +110,20 @@ export function HubSpokeDiagram() {
         <div className="bg-gradient-to-br from-accent/[0.12] to-gc-purple/[0.08] border-2 border-accent rounded-2xl px-10 py-6 text-center shadow-[0_0_40px_rgba(79,140,255,0.1)] relative">
           <Badge
             variant="accent"
-            className="absolute -top-2.5 -right-2.5 text-[9px] rounded-full px-2"
+            className="absolute -top-2.5 -right-2.5 text-[11px] rounded-full px-2"
           >
             SINGLE SOURCE OF TRUTH
           </Badge>
           <h2 className="font-display text-xl font-bold mb-1">
             DOSS Operations Cloud (ERP)
           </h2>
-          <p className="text-text-muted text-xs mt-1.5">
+          <p className="text-text-muted text-sm mt-1.5">
             Unified Master Data &middot; ARP Workflows &middot; IDP Data Platform &middot; Real-time HTAB DB
           </p>
           <div className="flex gap-2 justify-center mt-3 flex-wrap">
             {["Orders", "Inventory", "Procurement", "Production", "Fulfillment", "Catalog"].map(
               (t) => (
-                <Badge key={t} variant="accent" className="text-[10px]">
+                <Badge key={t} variant="accent" className="text-xs">
                   {t}
                 </Badge>
               )

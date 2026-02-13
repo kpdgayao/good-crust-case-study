@@ -21,11 +21,11 @@ const findings: Finding[] = [
     description: (
       <>
         4 order lines use the misspelled SKU{" "}
-        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[11px] font-mono">
+        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[13px] font-mono">
           PZ-PEPPERON
         </code>{" "}
         instead of{" "}
-        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[11px] font-mono">
+        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[13px] font-mono">
           PZ-PEPPERONI
         </code>
         . All 4 have a <strong className="text-gc-red">0% fill rate</strong> (66
@@ -46,7 +46,7 @@ const findings: Finding[] = [
     description: (
       <>
         235 of 778 fulfillment lines (30.2%) have{" "}
-        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[11px] font-mono">
+        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[13px] font-mono">
           erp_sync_status = Pending
         </code>
         . All 235 are missing carrier, tracking number, and ship date — meaning
@@ -82,11 +82,11 @@ const findings: Finding[] = [
     description: (
       <>
         JackRabbit locations use hyphens (
-        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[11px] font-mono">
+        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[13px] font-mono">
           3PL-JackRabbit-East
         </code>
         ) while Kratos uses underscores (
-        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[11px] font-mono">
+        <code className="bg-surface-2 px-1.5 py-0.5 rounded text-[13px] font-mono">
           3PL_Kratos_East
         </code>
         ). This suggests different integration methods or manual entry — a
@@ -102,19 +102,19 @@ export function FindingsCards() {
     <div className="space-y-3.5">
       {findings.map((f) => (
         <Card key={f.num} className="p-4">
-          <h3 className="text-sm font-semibold mb-2 flex items-center gap-2">
+          <h3 className="text-base font-semibold mb-2 flex items-center gap-2">
             <span
-              className={`inline-flex items-center justify-center w-6 h-6 rounded-md text-xs font-bold font-mono shrink-0 ${f.numColor}`}
+              className={`inline-flex items-center justify-center w-7 h-7 rounded-md text-sm font-bold font-mono shrink-0 ${f.numColor}`}
             >
               {f.num}
             </span>
             <span className="flex-1">{f.title}</span>
             <Badge variant={f.severityVariant}>{f.severity}</Badge>
           </h3>
-          <p className="text-xs text-text-muted leading-relaxed">
+          <p className="text-sm text-text-muted leading-relaxed">
             {f.description}
           </p>
-          <p className="text-xs mt-2">
+          <p className="text-sm mt-2">
             <strong className="text-gc-green">Fix:</strong>{" "}
             <span className="text-text-muted">{f.fix}</span>
           </p>

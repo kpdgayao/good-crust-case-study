@@ -7,15 +7,15 @@ export function SectionHead({
 }) {
   return (
     <div className="mb-7">
-      <h1 className="font-display text-[28px] font-bold mb-1.5">{title}</h1>
-      <p className="text-text-muted text-sm max-w-[700px]">{description}</p>
+      <h1 className="font-display text-3xl font-bold mb-1.5">{title}</h1>
+      <p className="text-text-muted text-base max-w-[700px]">{description}</p>
     </div>
   );
 }
 
 export function Subsection({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-7 mb-3.5 text-base font-semibold font-display">
+    <h2 className="mt-7 mb-3.5 text-lg font-semibold font-display">
       {children}
     </h2>
   );
@@ -37,7 +37,7 @@ export function Callout({
 
   return (
     <div
-      className={`bg-surface border border-border border-l-[3px] ${borderColor} rounded-gc p-3.5 mt-4 text-xs text-text-muted`}
+      className={`bg-surface border border-border border-l-[3px] ${borderColor} rounded-gc p-3.5 mt-4 text-sm text-text-muted`}
     >
       {children}
     </div>

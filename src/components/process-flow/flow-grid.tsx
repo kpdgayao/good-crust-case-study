@@ -17,7 +17,7 @@ function FlowNode({
 
   return (
     <div
-      className={`bg-surface-2 border border-border-accent rounded-gc-sm p-2 text-[11px] leading-snug border-l-[3px] ${border}`}
+      className={`bg-surface-2 border border-border-accent rounded-gc-sm p-2.5 text-[13px] leading-snug border-l-[3px] ${border}`}
     >
       {children}
     </div>
@@ -33,7 +33,7 @@ function FlowTag({ variant, children }: { variant: string; children: React.React
     money: "orange",
   };
   return (
-    <Badge variant={variantMap[variant] || "accent"} className="mt-1 text-[9px]">
+    <Badge variant={variantMap[variant] || "accent"} className="mt-1 text-[11px]">
       {children}
     </Badge>
   );
@@ -44,14 +44,14 @@ export function ProcessFlowGrid() {
     <div className="overflow-x-auto pb-5">
       <div className="grid grid-cols-[160px_repeat(5,1fr)] min-w-[1100px]">
         {/* Headers */}
-        <div className="p-3 text-center font-semibold text-[11px] border-b-2 border-border border-r-2 bg-surface text-text-muted uppercase tracking-wider">
+        <div className="p-3 text-center font-semibold text-xs border-b-2 border-border border-r-2 bg-surface text-text-muted uppercase tracking-wider">
           Lane
         </div>
         {["1. Order Capture", "2. Procurement", "3. Production", "4. Fulfillment", "5. Accounting"].map(
           (h) => (
             <div
               key={h}
-              className="p-3 text-center font-semibold text-[11px] border-b-2 border-border border-r border-border bg-surface text-text-muted uppercase tracking-wider last:border-r-0"
+              className="p-3 text-center font-semibold text-xs border-b-2 border-border border-r border-border bg-surface text-text-muted uppercase tracking-wider last:border-r-0"
             >
               {h}
             </div>
@@ -59,7 +59,7 @@ export function ProcessFlowGrid() {
         )}
 
         {/* Goods Lane */}
-        <div className="flex items-center justify-center font-semibold text-[13px] p-4 border-r-2 border-border bg-gc-green/[0.03]">
+        <div className="flex items-center justify-center font-semibold text-sm p-4 border-r-2 border-border bg-gc-green/[0.03]">
           Goods
         </div>
         <div className="p-2.5 border-r border-b border-border flex flex-col gap-1.5 bg-gc-green/[0.03]">
@@ -88,7 +88,7 @@ export function ProcessFlowGrid() {
         </div>
 
         {/* Data Lane */}
-        <div className="flex items-center justify-center font-semibold text-[13px] p-4 border-r-2 border-border bg-accent/[0.03]">
+        <div className="flex items-center justify-center font-semibold text-sm p-4 border-r-2 border-border bg-accent/[0.03]">
           Data
         </div>
         <div className="p-2.5 border-r border-b border-border flex flex-col gap-1.5 bg-accent/[0.03]">
@@ -143,7 +143,7 @@ export function ProcessFlowGrid() {
         </div>
 
         {/* Money Lane */}
-        <div className="flex items-center justify-center font-semibold text-[13px] p-4 border-r-2 border-border bg-gc-orange/[0.03]">
+        <div className="flex items-center justify-center font-semibold text-sm p-4 border-r-2 border-border bg-gc-orange/[0.03]">
           Money
         </div>
         <div className="p-2.5 border-r border-b border-border flex flex-col gap-1.5 bg-gc-orange/[0.03]">
@@ -197,7 +197,7 @@ export function ProcessFlowGrid() {
           { color: "bg-accent", label: "Internal (DOSS)" },
           { color: "bg-gc-orange", label: "Money Flow" },
         ].map((item) => (
-          <div key={item.label} className="flex items-center gap-1.5 text-[11px] text-text-muted">
+          <div key={item.label} className="flex items-center gap-1.5 text-[13px] text-text-muted">
             <div className={`w-2.5 h-2.5 rounded-sm ${item.color}`} />
             {item.label}
           </div>
@@ -252,20 +252,20 @@ export function CoPackerOptions() {
         >
           <Badge
             variant={p.badge}
-            className="absolute top-3 right-3 text-[9px]"
+            className="absolute top-3 right-3 text-[11px]"
           >
             {p.phase}
           </Badge>
-          <h3 className="text-[13px] font-semibold mb-1.5 pr-20">{p.title}</h3>
-          <p className="text-[11px] text-text-muted leading-relaxed">{p.desc}</p>
+          <h3 className="text-sm font-semibold mb-1.5 pr-20">{p.title}</h3>
+          <p className="text-[13px] text-text-muted leading-relaxed">{p.desc}</p>
           <div className="mt-2 flex flex-wrap gap-1">
             {p.pros.map((t) => (
-              <span key={t} className="inline-block px-1.5 py-0.5 rounded text-[10px] font-mono bg-gc-green-dim text-gc-green">
+              <span key={t} className="inline-block px-1.5 py-0.5 rounded text-xs font-mono bg-gc-green-dim text-gc-green">
                 + {t}
               </span>
             ))}
             {p.cons.map((t) => (
-              <span key={t} className="inline-block px-1.5 py-0.5 rounded text-[10px] font-mono bg-gc-red-dim text-gc-red">
+              <span key={t} className="inline-block px-1.5 py-0.5 rounded text-xs font-mono bg-gc-red-dim text-gc-red">
                 - {t}
               </span>
             ))}

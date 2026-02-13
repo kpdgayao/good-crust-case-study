@@ -92,7 +92,7 @@ export function SkuTable({ data }: { data: SkuSummary[] }) {
             >
               {d.sku}
               {d.sku === "PZ-PEPPERON" && (
-                <span className="ml-2 text-[9px] text-gc-red">TYPO</span>
+                <span className="ml-2 text-[11px] text-gc-red">TYPO</span>
               )}
             </Td>
             <Td align="right">{fmt(d.lines)}</Td>

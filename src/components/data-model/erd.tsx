@@ -163,18 +163,18 @@ function EntityCard({ entity }: { entity: Entity }) {
   return (
     <Card className="overflow-hidden hover:-translate-y-0.5 hover:border-border-accent hover:shadow-lg hover:shadow-black/30">
       <div className="px-3.5 py-2.5 border-b border-border flex items-center justify-between">
-        <h3 className="text-[13px] font-bold font-mono">{entity.name}</h3>
+        <h3 className="text-sm font-bold font-mono">{entity.name}</h3>
         <Badge variant={entity.sourceVariant}>{entity.source}</Badge>
       </div>
       <div>
         {entity.fields.map((f) => (
           <div
             key={f.name}
-            className="flex items-center gap-2 px-3.5 py-1 text-[11px] border-b border-border last:border-b-0 font-mono hover:bg-surface-2"
+            className="flex items-center gap-2 px-3.5 py-1.5 text-[13px] border-b border-border last:border-b-0 font-mono hover:bg-surface-2"
           >
             {f.key ? (
               <span
-                className={`text-[8px] font-bold px-1 py-0.5 rounded ${
+                className={`text-[10px] font-bold px-1 py-0.5 rounded ${
                   f.key === "PK"
                     ? "bg-gc-amber-dim text-gc-amber"
                     : "bg-gc-cyan-dim text-gc-cyan"
@@ -186,7 +186,7 @@ function EntityCard({ entity }: { entity: Entity }) {
               <span className="w-5" />
             )}
             <span className="text-text font-medium">{f.name}</span>
-            <span className="ml-auto text-text-dim text-[10px]">{f.type}</span>
+            <span className="ml-auto text-text-dim text-xs">{f.type}</span>
           </div>
         ))}
       </div>
@@ -204,7 +204,7 @@ export function DataModelView() {
       </div>
 
       <div className="mt-5 bg-surface border border-border rounded-gc p-4 overflow-x-auto">
-        <h3 className="text-sm font-semibold mb-3">Entity Relationships</h3>
+        <h3 className="text-base font-semibold mb-3">Entity Relationships</h3>
         <DataTable>
           <thead>
             <tr>

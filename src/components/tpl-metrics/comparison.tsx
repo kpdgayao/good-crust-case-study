@@ -20,7 +20,7 @@ const tooltipStyle = {
     background: "#1A1D27",
     border: "1px solid #2E3340",
     borderRadius: "6px",
-    fontSize: "11px",
+    fontSize: "13px",
     fontFamily: "JetBrains Mono, monospace",
   },
   labelStyle: { color: "#9499AD" },
@@ -41,14 +41,14 @@ function MetricDefinitionCard({
 }) {
   return (
     <Card className="p-5">
-      <h3 className="text-[15px] font-bold mb-1">
+      <h3 className="text-base font-bold mb-1">
         {num}. {title}
       </h3>
-      <p className="text-xs text-text-muted mb-3">{desc}</p>
-      <div className="font-mono text-[11px] bg-surface-2 px-3 py-2 rounded-gc-sm text-gc-cyan mb-2.5">
+      <p className="text-sm text-text-muted mb-3">{desc}</p>
+      <div className="font-mono text-[13px] bg-surface-2 px-3 py-2 rounded-gc-sm text-gc-cyan mb-2.5">
         {formula}
       </div>
-      <div className="text-[11px] text-text-dim">{benchmark}</div>
+      <div className="text-[13px] text-text-dim">{benchmark}</div>
     </Card>
   );
 }
@@ -113,7 +113,7 @@ export function TplMetricsView() {
 
       {/* Comparison Table */}
       <div>
-        <h2 className="text-base font-semibold font-display mb-3">
+        <h2 className="text-lg font-semibold font-display mb-3">
           3PL Comparison: JackRabbit vs Kratos
         </h2>
         <DataTable>
@@ -187,21 +187,21 @@ export function TplMetricsView() {
 
       {/* Sync Rate Chart */}
       <Card className="p-5">
-        <h3 className="text-sm font-semibold mb-4">
+        <h3 className="text-base font-semibold mb-4">
           Sync Rate by Location
         </h3>
         <ResponsiveContainer width="100%" height={280}>
           <BarChart data={locations}>
             <XAxis
               dataKey="location"
-              tick={{ fill: "#6B7089", fontSize: 9 }}
+              tick={{ fill: "#6B7089", fontSize: 11 }}
               angle={-15}
               textAnchor="end"
               height={55}
             />
             <YAxis
               domain={[0, 100]}
-              tick={{ fill: "#6B7089", fontSize: 10 }}
+              tick={{ fill: "#6B7089", fontSize: 12 }}
               tickFormatter={(v: number) => `${v}%`}
             />
             <Tooltip
@@ -222,20 +222,20 @@ export function TplMetricsView() {
 
       {/* Recommendation */}
       <Card className="p-5">
-        <h3 className="text-sm font-semibold mb-2 flex items-center gap-2">
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-md text-xs font-bold font-mono bg-accent-glow text-accent">
+        <h3 className="text-base font-semibold mb-2 flex items-center gap-2">
+          <span className="inline-flex items-center justify-center w-7 h-7 rounded-md text-sm font-bold font-mono bg-accent-glow text-accent">
             &rarr;
           </span>
           Both 3PLs Perform Similarly — Focus on Integration Quality First
         </h3>
-        <p className="text-xs text-text-muted leading-relaxed">
+        <p className="text-sm text-text-muted leading-relaxed">
           JackRabbit and Kratos show nearly identical performance across all 4
           metrics. The differences are marginal: JackRabbit has a slightly better
           sync rate ({jrSummary.syncRate}% vs {krSummary.syncRate}%) and ship lag
           ({jrSummary.avgLag}d vs {krSummary.avgLag}d), but neither meets
           acceptable thresholds.
         </p>
-        <div className="text-xs text-text-muted mt-3 space-y-1">
+        <div className="text-sm text-text-muted mt-3 space-y-1">
           <p>
             <strong className="text-gc-cyan">1.</strong> Resolve the 30% pending
             sync issue — this may be a DOSS integration bug, not a 3PL fault.

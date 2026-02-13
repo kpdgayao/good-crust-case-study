@@ -35,7 +35,7 @@ const tooltipStyle = {
     background: "#1A1D27",
     border: "1px solid #2E3340",
     borderRadius: "6px",
-    fontSize: "11px",
+    fontSize: "13px",
     fontFamily: "JetBrains Mono, monospace",
   },
   labelStyle: { color: "#9499AD" },
@@ -46,20 +46,20 @@ export function ChannelFillRateChart() {
 
   return (
     <Card className="p-5">
-      <h3 className="text-sm font-semibold mb-4">Fill Rate by Channel</h3>
+      <h3 className="text-base font-semibold mb-4">Fill Rate by Channel</h3>
       <ResponsiveContainer width="100%" height={260}>
         <BarChart data={data} layout="vertical">
           <XAxis
             type="number"
             domain={[(dataMin: number) => Math.floor(Math.min(dataMin, 90) - 2), 100]}
-            tick={{ fill: "#6B7089", fontSize: 10 }}
+            tick={{ fill: "#6B7089", fontSize: 12 }}
             tickFormatter={(v) => `${v}%`}
           />
           <YAxis
             type="category"
             dataKey="channel"
-            width={130}
-            tick={{ fill: "#9499AD", fontSize: 11 }}
+            width={140}
+            tick={{ fill: "#9499AD", fontSize: 13 }}
           />
           <Tooltip
             {...tooltipStyle}
@@ -86,18 +86,18 @@ export function SkuShortfallChart() {
 
   return (
     <Card className="p-5">
-      <h3 className="text-sm font-semibold mb-4">Shortfall by SKU</h3>
+      <h3 className="text-base font-semibold mb-4">Shortfall by SKU</h3>
       <ResponsiveContainer width="100%" height={260}>
         <BarChart data={data} layout="vertical">
           <XAxis
             type="number"
-            tick={{ fill: "#6B7089", fontSize: 10 }}
+            tick={{ fill: "#6B7089", fontSize: 12 }}
           />
           <YAxis
             type="category"
             dataKey="sku"
-            width={120}
-            tick={{ fill: "#9499AD", fontSize: 10 }}
+            width={130}
+            tick={{ fill: "#9499AD", fontSize: 12 }}
           />
           <Tooltip
             {...tooltipStyle}
@@ -132,7 +132,7 @@ export function SyncStatusChart() {
 
   return (
     <Card className="p-5">
-      <h3 className="text-sm font-semibold mb-4">ERP Sync Status</h3>
+      <h3 className="text-base font-semibold mb-4">ERP Sync Status</h3>
       <ResponsiveContainer width="100%" height={260}>
         <PieChart>
           <Pie
@@ -153,7 +153,7 @@ export function SyncStatusChart() {
           />
           <Legend
             formatter={(value) => (
-              <span style={{ color: "#9499AD", fontSize: 11 }}>{value}</span>
+              <span style={{ color: "#9499AD", fontSize: 13 }}>{value}</span>
             )}
           />
         </PieChart>
@@ -167,19 +167,19 @@ export function LocationSyncChart() {
 
   return (
     <Card className="p-5">
-      <h3 className="text-sm font-semibold mb-4">Sync Rate by Location</h3>
+      <h3 className="text-base font-semibold mb-4">Sync Rate by Location</h3>
       <ResponsiveContainer width="100%" height={260}>
         <BarChart data={data}>
           <XAxis
             dataKey="location"
-            tick={{ fill: "#6B7089", fontSize: 9 }}
+            tick={{ fill: "#6B7089", fontSize: 11 }}
             angle={-15}
             textAnchor="end"
             height={50}
           />
           <YAxis
             domain={[0, 100]}
-            tick={{ fill: "#6B7089", fontSize: 10 }}
+            tick={{ fill: "#6B7089", fontSize: 12 }}
             tickFormatter={(v) => `${v}%`}
           />
           <Tooltip

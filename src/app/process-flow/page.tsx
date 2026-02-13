@@ -11,7 +11,7 @@ export default function ProcessFlowPage() {
       <ProcessFlowGrid />
 
       <Subsection>Co-Packer Integration Options</Subsection>
-      <p className="text-text-muted text-[13px] mb-4">
+      <p className="text-text-muted text-sm mb-4">
         Phased approach to reduce the manual bottleneck at the co-packer
         integration point.
       </p>

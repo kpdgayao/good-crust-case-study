@@ -25,17 +25,17 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-56 bg-surface border-r border-border flex flex-col shrink-0 h-screen sticky top-0">
+    <aside className="w-60 bg-surface border-r border-border flex flex-col shrink-0 h-screen sticky top-0">
       <div className="p-4 border-b border-border">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-[7px] bg-gradient-to-br from-accent to-gc-purple flex items-center justify-center text-xs font-bold text-white font-mono">
+          <div className="w-8 h-8 rounded-[7px] bg-gradient-to-br from-accent to-gc-purple flex items-center justify-center text-sm font-bold text-white font-mono">
             GC
           </div>
           <div>
-            <div className="font-display font-bold text-sm leading-tight">
+            <div className="font-display font-bold text-base leading-tight">
               GoodCrust Foods
             </div>
-            <div className="text-[10px] text-text-dim font-mono">
+            <div className="text-xs text-text-dim font-mono">
               DOSS ERP Analysis
             </div>
           </div>
@@ -50,16 +50,16 @@ export function Sidebar() {
               key={item.href}
               href={item.href}
               className={cn(
-                "flex items-center gap-2.5 px-3 py-2 rounded-gc-sm text-xs font-medium transition-all",
+                "flex items-center gap-2.5 px-3 py-2.5 rounded-gc-sm text-sm font-medium transition-all",
                 active
                   ? "bg-accent text-white shadow-md shadow-accent/30"
                   : "text-text-muted hover:text-text hover:bg-surface-2"
               )}
             >
-              <Icon size={15} />
+              <Icon size={16} />
               <span className="flex-1">{item.label}</span>
               {item.prompt && (
-                <span className="text-[8px] font-mono opacity-50">
+                <span className="text-[10px] font-mono opacity-50">
                   {item.prompt}
                 </span>
               )}
@@ -68,7 +68,7 @@ export function Sidebar() {
         })}
       </nav>
       <div className="p-3 border-t border-border">
-        <div className="text-[10px] text-text-dim font-mono text-center">
+        <div className="text-xs text-text-dim font-mono text-center">
           Jan 1 &ndash; Mar 1, 2025
         </div>
       </div>

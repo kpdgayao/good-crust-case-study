@@ -11,7 +11,7 @@ export function DataTable({
     <div className="overflow-x-auto">
       <table
         className={cn(
-          "w-full border-collapse text-xs bg-surface rounded-gc overflow-hidden border border-border",
+          "w-full border-collapse text-sm bg-surface rounded-gc overflow-hidden border border-border",
           className
         )}
       >
@@ -33,7 +33,7 @@ export function Th({
   return (
     <th
       className={cn(
-        "px-3 py-2.5 font-semibold text-text-muted bg-surface-2 border-b-2 border-border font-mono text-[10px] uppercase tracking-wider",
+        "px-3 py-2.5 font-semibold text-text-muted bg-surface-2 border-b-2 border-border font-mono text-xs uppercase tracking-wider",
         align === "right" && "text-right",
         className
       )}
@@ -58,7 +58,7 @@ export function Td({
     <td
       colSpan={colSpan}
       className={cn(
-        "px-3 py-2 border-b border-border font-mono text-[11px]",
+        "px-3 py-2 border-b border-border font-mono text-[13px]",
         align === "right" && "text-right",
         className
       )}

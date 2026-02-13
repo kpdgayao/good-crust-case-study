@@ -61,7 +61,7 @@ export default function ReconciliationPage() {
               setChannel("");
               setSku("");
             }}
-            className="text-[10px] font-mono text-accent hover:text-accent/80 px-2"
+            className="text-xs font-mono text-accent hover:text-accent/80 px-2"
           >
             Clear Filters
           </button>
